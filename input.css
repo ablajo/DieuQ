@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300&family=Teko:wght@300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .menu-item{
+        @apply cursor-pointer relative flex h-full text-red-400 p-4 hover:bg-white
+    }
+}
+
+@layer base{
+    h1{
+        color: black;
+        
+    }
+    h2{
+        @apply text-5xl font-bold;
+    }
+    h5{
+        @apply opacity-30;
+
+    }
+    h6{
+        font-family: Teko;
+
+    }
+    p{
+        /* font-family: Anton; */
+
+    }
+    html {
+        scroll-behavior: smooth;
+      }
+}
